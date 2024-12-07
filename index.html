@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: #0000FF;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+
+        /* Navegación */
+        .topnav {
+            overflow: hidden;
+            background-color: #FF4720;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Catálogo de productos */
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .producto {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 22%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ddd;
+            
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .producto h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .producto p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .producto .btn-comprar, .producto .btn-carrito {
+            background-color: #FF4720;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .producto .btn-comprar:hover, .producto .btn-carrito:hover {
+            background-color: #e35d2a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>El Lápiz Vagabundo</h1>
+        <p>"Papelería con estilo, siempre en movimiento".</p>
+    </div>
+  
+    <!-- Navegación -->
+    <div class="topnav">
+        <a href="#">Papelería y Escolar</a>
+        <a href="#">Cómputo</a>
+        <a href="#">Mobiliario</a>
+        <a href="#">Mayoreo</a>
+        <a href="#">Otros</a>
+        <a href="#" style="float:right">Inicio</a>
+    </div>
+
+    <!-- Catálogo de productos -->
+    <div class="catalogo">
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="img/libretaescribe.jpg" alt="Producto 1">
+            <h3>Cuaderno Profesional Scribe</h3>
+            <p>CLÁSICO RAYA 100 HOJAS.</p>
+            <p>$59.00 MXN</p>
+            <button class="btn-comprar">Comprar</button>
+            <button class="btn-carrito">Carrito</button>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="img/libretaescribecosida.jpg" alt="Producto 2">
+            <h3>Cuaderno Cosido Profesional Scribe</h3>
+            <p>CLASICO RIG COS PROFESIONAL 100 HOJAS 5MM.</p>
+            <p>$86.00 MXN</p>
+            <button class="btn-comprar">Comprar</button>
+            <button class="btn-carrito">Carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+            <img src="img/lapicerosmulticolor.jfif" alt="Producto 3">
+            <h3>Plumas De Gel Paper Mate </h3>
+            <p>BOLÍGRAFOS DE COLORES MATE PUNTO FINO 10 PIEZAS.</p>
+            <p>$90.00 MXN</p>
+            <button class="btn-comprar">Comprar</button>
+            <button class="btn-carrito">Carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto">
+            <img src="img/lapicerostrio.jfif" alt="Producto 4">
+            <h3>Plumas de Gel Paper Mate </h3>
+            <p>PUNTO FINO TINTA NEGRA ROJA AZUL 3 PIEZAS.</p>
+            <p>$28.00 MXN</p>
+            <button class="btn-comprar">Comprar</button>
+            <button class="btn-carrito">Carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/marcadoresmulti.jpg" alt="Producto 4">
+          <h3>Marcador Sharpie Chisel Blister </h3>
+          <p>C/8 COLORES SURTIDOS.</p>
+          <p>$164.00 MXN</p>
+          <button class="btn-comprar">Comprar</button>
+          <button class="btn-carrito">Carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="img/marcadorestrio.jfif" alt="Producto 4">
+        <h3>Marcadores Permanentes Sharpie</h3>
+        <p>PUNTA FINA, CONTIENE 3 PIEZAS.</p>
+        <p>$64.00 MXN</p>
+        <button class="btn-comprar">Comprar</button>
+        <button class="btn-carrito">Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/crayonesjumbo.jfif" alt="Producto 4">
+      <h3>Crayones Crayola Jumbo Triangular</h3>
+      <p>COLORES VARIADOS, 12 PZS.</p>
+      <p>$53.00 MXN</p>
+      <button class="btn-comprar">Comprar</button>
+      <button class="btn-carrito">Carrito</button>
+  </div>
+
+  <div class="producto">
+    <img src="img/crayones96.jpg" alt="Producto 4">
+    <h3>Crayones Crayola C/96</h3>
+    <p>JUEGO DE 96 CRAYONES: 24 CRAYONES DE NEÓN, METÁLICO, NACARADO Y PURPURINA.</p>
+    <p>$250.00 MXN</p>
+    <button class="btn-comprar">Comprar</button>
+    <button class="btn-carrito">Carrito</button>
+</div>
+
+<div class="producto">
+  <img src="img/hojas100.jpg" alt="Producto 4">
+  <h3>Paquete Hojas Blancas </h3>
+  <p>TAMAÑO OFICIO 100 PZAS</p>
+  <p>$69.00 MXN</p>
+  <button class="btn-comprar">Comprar</button>
+  <button class="btn-carrito">Carrito</button>
+</div>
+
+<div class="producto">
+  <img src="img/calculadora.jpg" alt="Producto 4">
+  <h3>Calculadora Básica Casio</h3>
+  <p>CALCULADORA DE BOLSILLO CASIO HL-4A-S, 8 DÍGITOS, BATERÍA.</p>
+  <p>$46.00 MXN</p>
+  <button class="btn-comprar">Comprar</button>
+  <button class="btn-carrito">Carrito</button>
+</div>
+
+<div class="producto">
+  <img src="img/juegogeometria.jpg" alt="Producto 4">
+  <h3>Juego Geometría Maped</h3>
+  <p>JUEGO DE GEOMETRIA BÁSICO ESCOLAR, REGLA 30CM BIGRADUADA, ESCUADRAS 21CM, INCLUYE COMPÁS CON ADAPTADOR, CONTIENE 5 PIEZAS.</p>
+  <p>$100.00 MXN</p>
+  <button class="btn-comprar">Comprar</button>
+  <button class="btn-carrito">Carrito</button>
+</div>
+
+<div class="producto">
+  <img src="img/pegamento.jfif" alt="Producto 4">
+  <h3>Pegamento Blanco Escolar Resistol 850</h3>
+  <p>CONTIENE 55 GR.</p>
+  <p>$25.00 MXN</p>
+  <button class="btn-comprar">Comprar</button>
+  <button class="btn-carrito">Carrito</button>
+</div>
+    </div>
+
+</body>
+</html>
